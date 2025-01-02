@@ -13,15 +13,23 @@ public class ExceptionHandling {
 		 * catch: handling part
 		 * throws
 		 * throw - throw your own exception
-		 * 
+		 * finally-
 		 * 
 		 */
 		try {
-		FileReader fr = new FileReader(".\\src\\day7\\sample2");
+		System.out.println("Open Connection");
+		FileReader fr = new FileReader(".\\src\\day7\\sample");
+		
 		}
 		catch(FileNotFoundException e) {
 			System.out.println("Please verify as the file is not present: " + e);
+			
 		}
+		
+		finally {
+			System.out.println("Close the connection");
+		}
+	
 		
 		
 		
